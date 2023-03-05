@@ -1,4 +1,11 @@
-print("ALR")
+print("UI LIBRARY INIT")
+
+--[[
+	https://v3rmillion.net/showthread.php?tid=959294
+	ui-engine-v2
+	version 1.3a
+	by Singularity (V3rm @ King Singularity) (Discord @ Singularity#5490)
+--]]
 
 local ui_options = {
 	main_color = Color3.fromRGB(41, 74, 122),
@@ -919,7 +926,7 @@ local function ripple(button, x, y)
 end
 
 local windows = 0
-library = {}
+local library = {}
 
 local function format_windows()
 	local ull = Prefabs:FindFirstChild("UIListLayout"):Clone()
@@ -2014,6 +2021,7 @@ function library:AddWindow(title, options)
 			end
 		end
 	end
-
+	
 	return window_data, Window
 end
+return library
