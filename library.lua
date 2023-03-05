@@ -1,8 +1,4 @@
---[[
-	ui-engine-v2
-	version 1.3a
-	by Singularity (V3rm @ King Singularity) (Discord @ Singularity#5490)
---]]
+print("ALR")
 
 local ui_options = {
 	main_color = Color3.fromRGB(41, 74, 122),
@@ -923,7 +919,7 @@ local function ripple(button, x, y)
 end
 
 local windows = 0
-local library = {}
+library = {}
 
 local function format_windows()
 	local ull = Prefabs:FindFirstChild("UIListLayout"):Clone()
